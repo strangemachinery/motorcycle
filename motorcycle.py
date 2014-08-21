@@ -27,7 +27,7 @@ class Models(object):
 		self.name = name
 	def cost(self):
 		return self.wheel1.cost + self.wheel2.cost + self.frame.cost
-	def weight(self)
+	def weight(self):
 		return self.wheel1.weight + self.wheel2.weight + self.frame.weight
 	
 class Manufacturer(object):
@@ -44,9 +44,9 @@ class Shop(object):
 	inventory = []
 	def __init__(self, name, inv, price, profiting):
 		self.name = name
+		self.inv = inv
 		self.price = price
 		self.profiting = profiting 
-                self.inventory = inventory
 
 
 class Customer(object):
