@@ -57,7 +57,6 @@ class Customer(object):
 	def leftover(self):
 		for num in self.budget:
 			self.budget -= self.purchase()
-		return "You have {} left over.".format(self.budget)
 		if self.purchase >= budget:
 			print "You have enough for this. You're fine"
 		else:
