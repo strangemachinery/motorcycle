@@ -31,7 +31,7 @@ class Models(object):
 		return self.wheel1.weight + self.wheel2.weight + self.frame.weight
 	
 class Manufacturer(object):
-	def __init__(self, name, percentage, inventory):
+	def __init__(self, name, percentage):
 		self.name = name
 		self.percentage = percentage
 		self.inventory = []
@@ -40,7 +40,7 @@ man1 = Manufacturer("California", 0.04)
 man2 = Manufacturer("Australia", 0.05)
 
 class Shop(object):
-	def __init__(self, name, inv, price, profiting):
+	def __init__(self, name, price, profiting):
 		self.name = name
 		self.inv = []
 		self.price = price
